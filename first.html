@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            background-color: rgb(2, 23, 29);
+        }
+        h2{
+    position: relative;
+    font-size: 7vw;
+    color:white;
+    -webkit-text-stroke:white;
+    text-transform: uppercase;
+
+
+}
+h2::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0;
+    height: 100%;
+    color:rgb(2, 23, 29);
+    -webkit-text-stroke: 0vw rgb(221, 94, 10);
+    border-right: 3px  solid rgb(221, 23, 26);
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+@keyframes animate{
+    0%, 10%,100% {
+        width: 0%;
+    }
+    70%,90%{
+        width: 100%;
+    }
+}
+
+#ann{
+    margin-left:450px;
+    margin-top:20px;
+    background:transparent;
+    width:700px;
+}
+.btn-1{
+    width: 300px;
+    height: 40px;
+    border: 0;
+    font-size: 20px;
+    border-bottom: 2px solid wheat;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 600px;
+    margin-top: 100px;
+    color: azure;
+    background-color: transparent;
+}
+#start{
+    background: #fff;
+    color: black;
+    border-radius: 10px;
+    font-size:25px;
+    width: 200px;
+    height: 50px;
+    margin-left: 650px;
+    margin-top: 100px;
+}
+.dis_box{
+    width: 500px;
+    height: 600px;
+    background-color: white;
+    border-radius: 20px;
+    margin-left:500px;
+    margin-top: 50px;
+}
+#discription_box{
+    display: none;
+}
+#game_name{
+    display:inline-block;
+    width: 100%;
+    border-bottom:4px solid  rgb(2, 23, 29);
+    height:100px;
+    background-color: transparent;
+    border-radius: 20px;
+   
+}
+span{
+    font-size:30px;
+    align-items: center;
+    display: inline-block;
+    align-content: center;
+    background-color: transparent;
+    margin:30px 100px;
+    color:rgb(2, 23, 29) ;
+   font-weight: bolder;
+}
+.discriptio_info{
+    background-color:transparent;
+    font-size: 25px;
+    display: inline-block;
+    padding: auto;
+    align-content: center;
+    align-items: center;
+    align-self:center;
+    text-align:justify;
+    margin: 20px;
+}
+#discription_button{
+    background-color: transparent;
+    margin-top:50px;
+}
+#btn1{
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    background-color: rgb(2, 23, 29);
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius:10px;
+    margin: 20px;
+    
+    
+}
+
+#btn1:nth-child(2){
+    margin-left: 30px;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div id="discription_box">
+        <div class="dis_box">
+           <div id="game_name"><span>Welcome to Click ~ Me</span></div>
+           <div class="discriptio_info">Lorem ipsum, dolor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, placeat. sit amet consectetur adipisicing elit. Fugiat, quas labore porro excepturi qui iste non cumque, molestiae ipsum illo natus autem maxime optio, itaque tempore reprehenderit doloremque repellendus pariatur perferendis nobis aspernatur facere fuga? Minus ducimus praesentium nostrum culpa facere rem eos? Explicabo accusantium, dolorum aspernatur numquam pariatur aliquid.</div>
+         <div id="discription_button">
+             <input type="button" value="Back" onclick="Back()" id="btn1">
+             <input type="button" value="Start Now" onclick="Start_Now()" id="btn1">
+             
+         </div>
+        </div>
+   
+   
+   
+   
+   
+   
+    </div>
+  <div id="clear">
+    <div id="box-2">
+            
+        <div id="ann"><h2 data-text="CLICK~ME">CLICK~ME</h2></div>
+       </div>
+       <input type="text" placeholder="Enter Your Name...?" class="btn-1" id="one">
+       <input type="button" value="Continue"  id="start" onclick="Start()">
+  </div>
+       <script>
+           function  Back(){
+                document.getElementById("clear").style.display="inline-block";
+                document.getElementById("discription_box").style.display="none";
+           }
+     
+           function Start(){
+            var your_name=document.getElementById("one").value;
+            if(your_name==''){
+                alert("Enter Your Name Pleasee..!");
+                console.log(your_name);
+            }
+            else
+            {
+                document.getElementById("clear").style.display="none";
+                document.getElementById("discription_box").style.display="inline-block";
+            }
+            // else{
+            // window.open("second.html");
+            // }
+           }
+           function Start_Now(){
+            window.open("second.html");
+           }
+           
+           
+       </script>
+</body>
+</html>

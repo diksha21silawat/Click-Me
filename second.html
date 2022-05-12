@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    <style>
+        *{
+            background-color: rgb(2, 23, 29);
+        }
+      
+        .d1{
+            width:40px;
+            height: 40px;
+            position:fixed;
+            background-color: cadetblue;
+            text-align: center;
+            font-size: 60px;
+            margin-top: -70px;
+            border-radius:20%;
+             transition: all;
+    }
+   
+        #click1{
+                animation: myfirst1 8s;
+                background-color: red;
+            }
+     
+        @-webkit-keyframes myfirst1 {
+            0% {left: 500px; top: -10px;}
+            100%{
+                left: 500px; top:800px; transform: rotate(360deg);}
+                }
+        #click2{
+                animation: myfirst2  10s;
+                animation-delay: 2s;
+                background-color: rgb(8, 134, 165);
+            }
+     
+        @-webkit-keyframes myfirst2 {
+            0% {left: 1200px; top: -10px;}
+            100%{left: 1200px; top:800px; transform: rotate(360deg)}
+                }
+        #click3{
+                animation: myfirst3  10s;
+                background-color: rgb(16, 170, 75);
+                animation-delay: 3s;}
+     
+        @-webkit-keyframes myfirst3 {
+            0% {left: 1000px; top: -10px;}
+            100%{left: 1000px; top:800px; transform: rotate(360deg)}
+                }
+        #click4{
+                animation: myfirst4  10s;
+                background-color: rgb(95, 17, 119);
+                animation-delay: 4s;}
+     
+        @-webkit-keyframes myfirst4 {
+            0% {left: 600px; top: -10px;}
+            100%{left: 600px; top:800px; transform: rotate(360deg)}
+                }        
+        #click5{
+                animation: myfirst5  10s;
+                background-color: rgb(157, 190, 10);
+                animation-delay: 5s;}
+     
+        @-webkit-keyframes myfirst5 {
+            0% {left: 1200px; top: -10px;}
+            100%{left: 1200px; top:800px;  transform: rotate(360deg)}
+                }  
+        #click6{
+                animation: myfirst6  10s;
+                background-color: rgb(26, 177, 6);
+                animation-delay: 6s;}
+     
+        @-webkit-keyframes myfirst6 {
+            0% {left: 900px; top: -10px;}
+            100%{left: 900px; top:800px; transform: rotate(360deg)}
+                }  
+        #click7{
+                animation: myfirst7  10s;
+                background-color: rgb(85, 6, 68);
+                animation-delay: 7s;}
+     
+        @-webkit-keyframes myfirst7 {
+            0% {left: 100px; top: -10px;}
+            100%{left: 100px; top:800px; transform: rotate(360deg)}
+                }  
+        #click8{
+                animation: myfirst8  10s;
+                background-color: rgb(93, 142, 182);
+                animation-delay: 8s;}
+     
+        @-webkit-keyframes myfirst8 {
+            0% {left: 300px; top: -10px;}
+            100%{left: 300px; top:800px;  transform: rotate(360deg)}
+                } 
+        #click9{
+                animation: myfirst9  10s;
+                background-color: rgb(238, 139, 139);
+                animation-delay: 9s;}
+     
+        @-webkit-keyframes myfirst9{
+            0% {left: 600px; top: -10px;}
+            100%{left: 600px; top:800px;  transform: rotate(360deg)}
+                }  
+        #click10{
+                animation: myfirst10  10s;
+                background-color: rgb(127, 175, 126);
+                animation-delay: 10s;}
+     
+        @-webkit-keyframes myfirst10 {
+            0% {left: 800px; top: -10px;}
+            100%{left: 800px; top:800px;  transform: rotate(360deg)}
+                }                     
+        #click11{
+                animation: myfirst11  10s;
+                background-color: rgb(201, 235, 8);
+                animation-delay: 11s;}
+     
+        @-webkit-keyframes myfirst11 {
+            0% {left: 500px; top: -10px;}
+            100%{left: 500px; top:800px;  transform: rotate(360deg)}
+                }     
+        #click11{
+                animation: myfirst11  10s;
+                background-color: rgb(8, 73, 117);
+                animation-delay: 12s;}
+     
+        @-webkit-keyframes myfirst11 {
+            0% {left: 300px; top: -10px;}
+            100%{left: 300px; top:800px;  transform: rotate(360deg)}
+                } 
+        #click12{
+                animation: myfirst12  10s;
+                background-color: rgba(0, 238, 255, 0.308);
+                animation-delay: 13s;}
+     
+        @-webkit-keyframes myfirst12 {
+            0% {left: 100px; top: -10px;}
+            100%{left: 100px; top:800px;  transform: rotate(360deg)}
+                } 
+        #click13{
+                animation: myfirst13  10s;
+                background-color: rgb(165, 9, 204);
+                animation-delay: 14s;}
+     
+        @-webkit-keyframes myfirst13 {
+            0% {left: 400px; top: -10px;}
+            100%{left: 400px; top:800px;  transform: rotate(360deg)}
+                } 
+        #click14{
+                animation: myfirst14  10s;
+                background-color: rgb(55, 196, 13);
+                animation-delay: 15s;}
+     
+        @-webkit-keyframes myfirst14 {
+            0% {left: 600px; top: -10px;}
+            100%{left: 600px; top:800px;  transform: rotate(360deg)}
+                } 
+        #click15{
+                animation: myfirst15  10s;
+                background-color: rgb(209, 181, 181);
+                animation-delay: 16s;}
+     
+        @-webkit-keyframes myfirst15 {
+            0% {left: 700px; top: -10px;}
+            100%{left: 700px; top:800px;  transform: rotate(360deg)}
+                }
+        #click16{
+                animation: myfirst16  10s;
+                background-color: rgb(42, 153, 88);
+                animation-delay: 17s;}
+     
+        @-webkit-keyframes myfirst16 {
+            0% {left: 1300px; top: -10px;}
+            100%{left: 1300px; top:800px;  transform: rotate(360deg)}
+                }
+        #click17{
+                animation: myfirst17 10s;
+                background-color: red;
+                animation-delay: 18s;
+            }
+     
+        @-webkit-keyframes myfirst17 {
+            0% {left: 500px; top: -10px;}
+            100%{
+                left: 500px; top:800px; transform: rotate(360deg);}
+                }
+        #click18{
+                animation: myfirst18  10s;
+                animation-delay: 19s;
+                background-color: rgb(8, 134, 165);
+            }
+     
+        @-webkit-keyframes myfirst18 {
+            0% {left: 1200px; top: -10px;}
+            100%{left: 1200px; top:800px; transform: rotate(360deg)}
+                }
+        #click19{
+                animation: myfirst3  10s;
+                background-color: rgb(16, 170, 75);
+                animation-delay: 20s;}
+     
+        @-webkit-keyframes myfirst19 {
+            0% {left: 1000px; top: -10px;}
+            100%{left: 1000px; top:800px; transform: rotate(360deg)}
+                }
+        #click20{
+                animation: myfirst4  10s;
+                background-color: rgb(95, 17, 119);
+                animation-delay: 21s;}
+     
+        @-webkit-keyframes myfirst20 {
+            0% {left: 600px; top: -10px;}
+            100%{left: 600px; top:800px; transform: rotate(360deg)}
+                }        
+        #click21{
+                animation: myfirst5  10s;
+                background-color: rgb(157, 190, 10);
+                animation-delay: 22s;}
+     
+        @-webkit-keyframes myfirst21 {
+            0% {left: 1200px; top: -10px;}
+            100%{left: 1200px; top:800px;  transform: rotate(360deg)}
+                }  
+        #click22{
+                animation: myfirst22  10s;
+                background-color: rgb(26, 177, 6);
+                animation-delay: 23s;}
+     
+        @-webkit-keyframes myfirst22 {
+            0% {left: 900px; top: -10px;}
+            100%{left: 900px; top:800px; transform: rotate(360deg)}
+                }  
+        #click23{
+                animation: myfirst23  10s;
+                background-color: rgb(85, 6, 68);
+                animation-delay: 24s;}
+     
+        @-webkit-keyframes myfirst23 {
+            0% {left: 100px; top: -10px;}
+            100%{left: 100px; top:800px; transform: rotate(360deg)}
+                }  
+        #click24{
+                animation: myfirst24  10s;
+                background-color: rgb(93, 142, 182);
+                animation-delay: 25s;}
+     
+        @-webkit-keyframes myfirst24 {
+            0% {left: 300px; top: -10px;}
+            100%{left: 300px; top:800px;  transform: rotate(360deg)}
+                } 
+        #click25{
+                animation: myfirst25  10s;
+                background-color: rgb(238, 139, 139);
+                animation-delay: 26s;}
+     
+        @-webkit-keyframes myfirst25{
+            0% {left: 600px; top: -10px;}
+            100%{left: 600px; top:800px;  transform: rotate(360deg)}
+                }  
+        #click26{
+                animation: myfirst26  10s;
+                background-color: rgb(127, 175, 126);
+                animation-delay: 27s;}
+     
+        @-webkit-keyframes myfirst26 {
+            0% {left: 800px; top: -10px;}
+            100%{left: 800px; top:800px;  transform: rotate(360deg)}
+                }                     
+        #click27{
+                animation: myfirst27  10s;
+                background-color: rgb(201, 235, 8);
+                animation-delay: 28s;}
+     
+        @-webkit-keyframes myfirst27 {
+            0% {left: 500px; top: -10px;}
+            100%{left: 500px; top:800px;  transform: rotate(360deg)}
+                }     
+        #click28{
+                animation: myfirst28  10s;
+                background-color: rgb(8, 73, 117);
+                animation-delay: 29s;}
+     
+        @-webkit-keyframes myfirst28 {
+            0% {left: 300px; top: -10px;}
+            100%{left: 300px; top:800px;  transform: rotate(360deg)}
+                } 
+        #click29{
+                animation: myfirst29 10s;
+                background-color: rgba(0, 238, 255, 0.308);
+                animation-delay: 30s;}
+     
+        @-webkit-keyframes myfirst29 {
+            0% {left: 100px; top: -10px;}
+            100%{left: 100px; top:800px;  transform: rotate(360deg)}
+                } 
+        #click30{
+                animation: myfirst30  10s;
+                background-color: rgb(165, 9, 204);
+                animation-delay: 31s;}
+     
+        @-webkit-keyframes myfirst31 {
+            0% {left: 400px; top: -10px;}
+            100%{left: 400px; top:800px;  transform: rotate(360deg)}
+                } 
+        #click31{
+                animation: myfirst31  10s;
+                background-color: rgb(55, 196, 13);
+                animation-delay: 32s;}
+     
+        @-webkit-keyframes myfirst31 {
+            0% {left: 600px; top: -10px;}
+            100%{left: 600px; top:800px;  transform: rotate(360deg)}
+                } 
+        #click32{
+                animation: myfirst32  10s;
+                background-color: rgb(209, 181, 181);
+                animation-delay: 33s;}
+     
+        @-webkit-keyframes myfirst32 {
+            0% {left: 700px; top: -10px;}
+            100%{left: 700px; top:800px;  transform: rotate(360deg)}
+                }
+        #click33{
+                animation: myfirst33  10s;
+                background-color: rgb(42, 153, 88);
+                animation-delay: 33s;}
+     
+        @-webkit-akeyframes myfirst33 {
+            0% {left: 1300px; top: -10px;}
+            100%{left: 1300px; top:800px;  transform: rotate(360deg)}
+                }
+        #click34{
+                animation: myfirst34 20s;
+                background-color: red;
+                animation-delay: 34s;
+            }
+     
+        @-webkit-keyframes myfirst34 {
+            0% {left: 500px; top: -10px;}
+            100%{
+                left: 500px; top:800px; transform: rotate(360deg);}
+                }
+        #click35{
+                animation: myfirst35  10s;
+                animation-delay: 35s;
+                background-color: rgb(8, 134, 165);
+            }
+     
+        @-webkit-keyframes myfirst35 {
+            0% {left: 1200px; top: -10px;}
+            100%{left: 1200px; top:800px; transform: rotate(360deg)}
+                }
+        #click36{
+                animation: myfirst36  10s;
+                background-color: rgb(16, 170, 75);
+                animation-delay: 36s;}
+     
+        @-webkit-keyframes myfirst36 {
+            0% {left: 1000px; top: -10px;}
+            100%{left: 1000px; top:800px; transform: rotate(360deg)}
+                }
+        #click37{
+                animation: myfirst37  10s;
+                background-color: rgb(95, 17, 119);
+                animation-delay: 37s;}
+     
+        @-webkit-keyframes myfirst37 {
+            0% {left: 600px; top: -10px;}
+            100%{left: 600px; top:800px; transform: rotate(360deg)}
+                }        
+        #click38{
+                animation: myfirst38  10s;
+                background-color: rgb(157, 190, 10);
+                animation-delay: 38s;}
+     
+        @-webkit-keyframes myfirst39 {
+            0% {left: 1200px; top: -10px;}
+            100%{left: 1200px; top:800px;  transform: rotate(360deg)}
+                }  
+        #click40{
+                animation: myfirst40  10s;
+                background-color: rgb(26, 177, 6);
+                animation-delay: 40s;}
+     
+        @-webkit-keyframes myfirst40 {
+            0% {left: 900px; top: -10px;}
+            100%{left: 900px; top:800px; transform: rotate(360deg)}
+                }  
+        #click41{
+                animation: myfirst41  10s;
+                background-color: rgb(85, 6, 68);
+                animation-delay: 41s;}
+     
+        @-webkit-keyframes myfirst41 {
+            0% {left: 1200px; top: -10px;}
+            100%{left: 1200px; top:800px; transform: rotate(360deg)}
+                }  
+        #click42{
+                animation: myfirst42  10s;
+                background-color: rgb(93, 142, 182);
+                animation-delay: 42s;}
+     
+        @-webkit-keyframes myfirst42 {
+            0% {left: 300px; top: -10px;}
+            100%{left: 300px; top:800px;  transform: rotate(360deg)}
+                } 
+        #click43{
+                animation: myfirst43  10s;
+                background-color: rgb(238, 139, 139);
+                animation-delay: 43s;}
+     
+        @-webkit-keyframes myfirst43{
+            0% {left: 600px; top: -10px;}
+            100%{left: 600px; top:800px;  transform: rotate(360deg)}
+                }  
+        #click45{
+                animation: myfirst45  10s;
+                background-color: rgb(127, 175, 126);
+                animation-delay: 45s;}
+     
+        @-webkit-keyframes myfirst45 {
+            0% {left: 800px; top: -10px;}
+            100%{left: 800px; top:800px;  transform: rotate(360deg)}
+                }                     
+        #click46{
+                animation: myfirst46  10s;
+                background-color: rgb(201, 235, 8);
+                animation-delay: 46s;}
+     
+        @-webkit-keyframes myfirst46 {
+            0% {left: 500px; top: -10px;}
+            100%{left: 500px; top:800px;  transform: rotate(360deg)}
+                }     
+        #click47{
+                animation: myfirst47  10s;
+                background-color: rgb(8, 73, 117);
+                animation-delay: 47s;}
+     
+        @-webkit-keyframes myfirst47 {
+            0% {left: 300px; top: -10px;}
+            100%{left: 300px; top:800px;  transform: rotate(360deg)}
+                } 
+        #click48{
+                animation: myfirst48  10s;
+                background-color: rgba(0, 238, 255, 0.308);
+                animation-delay: 48s;}
+     
+        @-webkit-keyframes myfirst48 {
+            0% {left: 100px; top: -10px;}
+            100%{left: 100px; top:800px;  transform: rotate(360deg)}
+                } 
+        #click49{
+                animation: myfirst49  10s;
+                background-color: rgb(165, 9, 204);
+                animation-delay: 49s;}
+     
+        @-webkit-keyframes myfirst49 {
+            0% {left: 400px; top: -10px;}
+            100%{left: 400px; top:800px;  transform: rotate(360deg)}
+                } 
+        #click50{
+                animation: myfirst50  10s;
+                background-color: rgb(55, 196, 13);
+                animation-delay: 50s;}
+     
+        @-webkit-keyframes myfirst50 {
+            0% {left: 900px; top: -10px;}
+            100%{left: 900px; top:800px;  transform: rotate(360deg)}
+                } 
+
+         .D1{
+              width: 100px;
+              height: 40px;   
+              border-radius: 20px;
+              border-color: 2px solid black;
+              background-color: red;
+              display: inline-block;
+              text-align: center;
+         }       
+                
+
+        
+        
+    </style>
+</head>
+<body>
+ <div class="container">
+     <div class="row">
+            <div class="col-12">
+            <div class="d1" id="click1" onclick="first()"></div>
+            <div class="d1" id="click2" onclick="first2()"></div>
+            <div class="d1" id="click3" onclick="first3()"></div>
+            <div class="d1" id="click4" onclick="first4()"></div>
+            <div class="d1" id="click5" onclick="first5()"></div>
+            <div class="d1" id="click6" onclick="first6()"></div>
+            <div class="d1" id="click7" onclick="first7()"></div>
+            <div class="d1" id="click8" onclick="first8()"></div>  
+            <div class="d1" id="click9" onclick="first9()"></div>
+            <div class="d1" id="click10" onclick="first10()"></div>
+            <div class="d1" id="click11" onclick="first11()"></div>
+            <div class="d1" id="click12" onclick="first12()"></div>
+            <div class="d1" id="click13" onclick="first13()"></div>
+            <div class="d1" id="click14" onclick="first14()"></div>
+            <div class="d1" id="click15" onclick="first15()"></div>
+            <div class="d1" id="click16" onclick="first16()"></div>
+            <div class="d1" id="click17" onclick="first17()"></div>
+            <div class="d1" id="click18" onclick="first18()"></div>
+            <div class="d1" id="click19" onclick="first19()"></div>
+            <div class="d1" id="click20" onclick="first20()"></div>
+            <div class="d1" id="click21" onclick="first21()"></div>
+            <div class="d1" id="click22" onclick="first22()"></div>
+            <div class="d1" id="click23" onclick="first23()"></div>
+            <div class="d1" id="click24" onclick="first24()"></div>  
+            <div class="d1" id="click25" onclick="first25()"></div>
+            <div class="d1" id="click26" onclick="first26()"></div>
+            <div class="d1" id="click27" onclick="first27()"></div>
+            <div class="d1" id="click28" onclick="first28()"></div>
+            <div class="d1" id="click29" onclick="first29()"></div>
+            <div class="d1" id="click30" onclick="first30()"></div>
+            <div class="d1" id="click31" onclick="first31()"></div>
+            <div class="d1" id="click32" onclick="first32()"></div>
+            <div class="d1" id="click33" onclick="first33()"></div>
+            <div class="d1" id="click34" onclick="first34()"></div>
+            <div class="d1" id="click35" onclick="first35()"></div>
+            <div class="d1" id="click36" onclick="first36()"></div>
+            <div class="d1" id="click37" onclick="first37()"></div>
+            <div class="d1" id="click38" onclick="first38()"></div>
+            <div class="d1" id="click39" onclick="first39()"></div>
+            <div class="d1" id="click40" onclick="first40()"></div>
+            <div class="d1" id="click41" onclick="first41()"></div>  
+            <div class="d1" id="click42" onclick="first42()"></div>
+            <div class="d1" id="click43" onclick="first43()"></div>
+            <div class="d1" id="click44" onclick="first44()"></div>
+            <div class="d1" id="click45" onclick="first45()"></div>
+            <div class="d1" id="click46" onclick="first46()"></div>
+            <div class="d1" id="click47" onclick="first47()"></div>
+            <div class="d1" id="click48" onclick="first48()"></div>
+            <div class="d1" id="click49" onclick="first49()"></div>
+            <div class="d1" id="click50" onclick="first50()"></div>
+            <div class="D1" id="click51" onclick="getresult()">Get Result</div>
+            
+            
+          
+            
+         </div>
+     </div>
+ </div>
+  <script>
+      var count=0;
+      var dis=document.getElementById("click51");
+      function first51(){
+        dis.innerHTML="Well Done You Clicked "+count+" Out of 50..Congratulations.";
+        
+      }
+      function first(){
+         document.getElementById("click1").style.display="none";
+         count++;
+      }
+      function first2(){
+         document.getElementById("click2").style.display="none";
+         count++;
+      }
+      function first3(){
+         document.getElementById("click3").style.display="none";
+         count++;
+      }
+      function first4(){
+         document.getElementById("click4").style.display="none";
+         count++;
+      }
+      function first5(){
+         document.getElementById("click5").style.display="none";
+         count++;
+      }
+      function first6(){
+         document.getElementById("click6").style.display="none";
+         count++;
+      }
+      function first7(){
+         document.getElementById("click7").style.display="none";
+         count++;
+      }
+      function first8(){
+         document.getElementById("click8").style.display="none";
+         count++;
+      }
+      function first9(){
+         document.getElementById("click9").style.display="none";
+         count++;
+      }
+      function first10(){
+         document.getElementById("click10").style.display="none";
+         count++;
+      }
+      function first11(){
+         document.getElementById("click11").style.display="none";
+         count++;
+      }
+      function first12(){
+         document.getElementById("click12").style.display="none";
+         count++;
+      }
+      function first13(){
+         document.getElementById("click13").style.display="none";
+         count++;
+      }
+      function first14(){
+         document.getElementById("click14").style.display="none";
+         count++;
+      }
+      function first15(){
+         document.getElementById("click15").style.display="none";
+         count++;
+      }
+      function first16(){
+         document.getElementById("click16").style.display="none";
+         count++;
+      }
+      function first17(){
+         document.getElementById("click17").style.display="none";
+         count++;
+      }
+      function first18(){
+         document.getElementById("click18").style.display="none";
+         count++;
+      }
+      function first19(){
+         document.getElementById("click19").style.display="none";
+         count++;
+      }
+      function first20(){
+         document.getElementById("click20").style.display="none";
+         count++;
+      }
+      function first21(){
+         document.getElementById("click21").style.display="none";
+         count++;
+      }
+      function first22(){
+         document.getElementById("click22").style.display="none";
+         count++;
+      }
+      function first23(){
+         document.getElementById("click23").style.display="none";
+         count++;
+      }
+      function first24(){
+         document.getElementById("click24").style.display="none";
+         count++;
+      }
+      function first25(){
+         document.getElementById("click25").style.display="none";
+         count++;
+      }
+      function first26(){
+         document.getElementById("click26").style.display="none";
+         count++;
+      }
+      function first27(){
+         document.getElementById("click27").style.display="none";
+         count++;
+      }
+      function first28(){
+         document.getElementById("click28").style.display="none";
+         count++;
+      }
+      function first29(){
+         document.getElementById("click29").style.display="none";
+         count++;
+      }
+      function first30(){
+         document.getElementById("click30").style.display="none";
+         count++;
+      }
+      function first31(){
+         document.getElementById("click31").style.display="none";
+         count++;
+      }
+      function first32(){
+         document.getElementById("click32").style.display="none";
+         count++;
+      }
+      function first33(){
+         document.getElementById("click33").style.display="none";
+         count++;
+      }
+      function first34(){
+         document.getElementById("click34").style.display="none";
+         count++;
+      }
+      function first35(){
+         document.getElementById("click35").style.display="none";
+         count++;
+      }
+      function first36(){
+         document.getElementById("click36").style.display="none";
+         count++;
+      }
+      function first37(){
+         document.getElementById("click37").style.display="none";
+         count++;
+      }
+      function first38(){
+         document.getElementById("click38").style.display="none";
+         count++;
+      }
+      function first39(){
+         document.getElementById("click39").style.display="none";
+         count++;
+      }
+      function first40(){
+         document.getElementById("click40").style.display="none";
+         count++;
+      }
+      function first41(){
+         document.getElementById("click41").style.display="none";
+         count++;
+      }
+      function first42(){
+         document.getElementById("click42").style.display="none";
+         count++;
+      }
+      function first43(){
+         document.getElementById("click43").style.display="none";
+         count++;
+      }
+      function first44(){
+         document.getElementById("click44").style.display="none";
+         count++;
+      }
+      function first45(){
+         document.getElementById("click45").style.display="none";
+         count++;
+      }
+      function first46(){
+         document.getElementById("click46").style.display="none";
+         count++;
+      }
+      function first47(){
+         document.getElementById("click47").style.display="none";
+         count++;
+      }
+      function first48(){
+         document.getElementById("click48").style.display="none";
+         count++;
+      }
+      function first49(){
+         document.getElementById("click49").style.display="none";
+         count++;
+      }
+      function first50(){
+         document.getElementById("click50").style.display="none";
+         count++;
+      }
+     
+   
+      
+  </script>
+</body>
+</html>
